@@ -1,7 +1,7 @@
 {% set name = "anaconda-project" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7b895fef4f1ecce879d81393a9b8fa9a62c37d11a43a62337074032a078b0fe9" %}
+{% set hash = "2c79d1b38b4c0cbccba6965e2ab2483cdf8dcbc7c69b73ef42d639cfe7b62e89" %}
 
 package:
   name: {{ name|lower }}
