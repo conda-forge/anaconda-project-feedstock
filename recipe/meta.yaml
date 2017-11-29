@@ -21,7 +21,7 @@ build:
     - anaconda-project = anaconda_project.cli:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
 
