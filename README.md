@@ -17,14 +17,15 @@ and then launch the project.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/anaconda-project-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/anaconda-project-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/anaconda-project-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/anaconda-project-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/anaconda-project-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/anaconda-project-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/anaconda-project-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/anaconda-project-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/anaconda-project/badges/version.svg)](https://anaconda.org/conda-forge/anaconda-project)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/anaconda-project/badges/downloads.svg)](https://anaconda.org/conda-forge/anaconda-project)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-anaconda--project-green.svg)](https://anaconda.org/conda-forge/anaconda-project) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/anaconda-project.svg)](https://anaconda.org/conda-forge/anaconda-project) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/anaconda-project.svg)](https://anaconda.org/conda-forge/anaconda-project) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/anaconda-project.svg)](https://anaconda.org/conda-forge/anaconda-project) |
 
 Installing anaconda-project
 ===========================
