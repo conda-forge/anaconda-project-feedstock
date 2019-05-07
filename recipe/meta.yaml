@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - anaconda-project = anaconda_project.cli:main
@@ -32,7 +32,7 @@ requirements:
     - python
     - requests
     - ruamel_yaml
-    - tornado >=4.2
+    - tornado >=4.2,<5.0
 
 test:
   imports:
