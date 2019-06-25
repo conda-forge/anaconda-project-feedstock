@@ -1,23 +1,17 @@
-{% set name = "anaconda-project" %}
-{% set version = "0.8.2" %}
-{% set hash_type = "sha256" %}
-{% set hash = "2c79d1b38b4c0cbccba6965e2ab2483cdf8dcbc7c69b73ef42d639cfe7b62e89" %}
+{% set version = "0.8.3" %}
 
 package:
-  name: {{ name|lower }}
+  name: anaconda-project
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
-  patches:
-    - 001-setup.py.patch
+  url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
+  sha256: 71614e34f524e11bceab96382f2f98823118fb53c502f3cfd6bb40203de932cf
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - anaconda-project = anaconda_project.cli:main
 
