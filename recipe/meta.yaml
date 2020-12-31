@@ -18,21 +18,23 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=2.7
 
   run:
     - anaconda-client
-    - python
+    - python >=2.7
     - requests
     - ruamel_yaml
     - tornado >=4.2
 
 test:
+  requires:
+    - pip
   imports:
     - anaconda_project
 
   commands:
+    - pip check
     - echo "First of test commands"
     - anaconda-project --help
     - anaconda-project --version
