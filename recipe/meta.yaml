@@ -24,7 +24,7 @@ requirements:
     - anaconda-client
     - python >=2.7
     - requests
-    - ruamel_yaml
+    - ruamel-yaml
     - tornado >=4.2
 
 test:
