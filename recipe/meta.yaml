@@ -1,4 +1,4 @@
-{% set version = "0.8.4" %}
+{% set version = "0.9.0" %}
 
 package:
   name: anaconda-project
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
-  sha256: 0b57e51e0d75f63602e8929c612b128d5a0704fdd38354c52c150f3007dbebfb
+  sha256: d89b4a6775b3d94762c1064b4ba57273a81a37833772c07b6d282586e1fe305e
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - anaconda-project = anaconda_project.cli:main
 
@@ -26,6 +26,7 @@ requirements:
     - requests
     - ruamel_yaml
     - tornado >=4.2
+    - jinja2
 
 test:
   imports:
