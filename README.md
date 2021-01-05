@@ -3,11 +3,15 @@ About anaconda-project
 
 Home: https://github.com/Anaconda-Platform/anaconda-project
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/anaconda-project-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tool for encapsulating, running, and reproducing data science projects
+
+Development: https://github.com/Anaconda-Platform/anaconda-project
+
+Documentation: http://anaconda-project.readthedocs.io
 
 By adding an anaconda-project.yml to a project directory, a single
 anaconda-project runcommand will be able to set up all dependencies
@@ -70,7 +74,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -119,6 +123,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@fpliger](https://github.com/fpliger/)
 * [@goanpeca](https://github.com/goanpeca/)
 * [@mingwandroid](https://github.com/mingwandroid/)

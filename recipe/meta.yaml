@@ -11,19 +11,18 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
   entry_points:
     - anaconda-project = anaconda_project.cli:main
 
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=2.7
 
   run:
     - anaconda-client
-    - python
+    - python >=2.7
     - requests
     - ruamel_yaml
     - tornado >=4.2
@@ -31,7 +30,6 @@ requirements:
 test:
   imports:
     - anaconda_project
-
   commands:
     - echo "First of test commands"
     - anaconda-project --help
@@ -40,7 +38,7 @@ test:
 
 about:
   home: https://github.com/Anaconda-Platform/anaconda-project
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Tool for encapsulating, running, and reproducing data science projects
@@ -56,3 +54,4 @@ extra:
     - fpliger
     - goanpeca
     - mingwandroid
+    - bollwyvl
