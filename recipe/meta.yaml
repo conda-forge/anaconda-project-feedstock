@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - anaconda-project = anaconda_project.cli:main
 
@@ -26,6 +26,7 @@ requirements:
     - requests
     - ruamel_yaml
     - tornado >=4.2
+    - jinja2
 
 test:
   imports:
