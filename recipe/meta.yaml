@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
-  sha256: d89b4a6775b3d94762c1064b4ba57273a81a37833772c07b6d282586e1fe305e
+  sha256: d1c99724bed31a87f28257720a7f0916a8d2b7e4ff3687b46c2a3de06e95b186
 
 build:
   noarch: python
