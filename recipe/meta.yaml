@@ -22,6 +22,7 @@ requirements:
 
   run:
     - anaconda-client
+    - conda-pack
     - python >=2.7
     - requests
     - ruamel_yaml
