@@ -1,4 +1,4 @@
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 
 package:
   name: anaconda-project
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
-  sha256: f578d0d242cb78605933992c67acb559a5e93a5108bb575faeb9361b7e1f44ca
+  sha256: 4b3f444ad3f75af454a92b797bf8a1a4d5b4070f2bb50692736f47373c4bdbd4
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - anaconda-project = anaconda_project.cli:main
@@ -22,6 +22,7 @@ requirements:
 
   run:
     - anaconda-client
+    - conda-pack
     - python >=2.7
     - requests
     - ruamel_yaml
