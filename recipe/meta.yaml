@@ -23,16 +23,20 @@ requirements:
   run:
     - anaconda-client
     - conda-pack
+    - jinja2
     - python >=2.7
     - requests
     - ruamel_yaml
     - tornado >=4.2
-    - jinja2
+    - tqdm
 
 test:
+  requires:
+    - pip
   imports:
     - anaconda_project
   commands:
+    - pip check
     - echo "First of test commands"
     - anaconda-project --help
     - anaconda-project --version
