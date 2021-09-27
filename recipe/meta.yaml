@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: anaconda-project
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
-  sha256: 2e26f358bcfcd957a801980a1ab2cb71891214abf94e258330e205a2da0f50b3
+  sha256: 1544f911c490f9a757a7e6ded4c96e566dcbceb9a3f0718df3907fd522e24ac0
 
 build:
   noarch: python
@@ -62,3 +62,4 @@ extra:
     - goanpeca
     - mingwandroid
     - bollwyvl
+    - albertdefusco
