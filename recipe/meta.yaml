@@ -1,4 +1,4 @@
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 package:
   name: anaconda-project
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Anaconda-Platform/anaconda-project/archive/v{{ version }}.tar.gz
-  sha256: 1544f911c490f9a757a7e6ded4c96e566dcbceb9a3f0718df3907fd522e24ac0
+  sha256: 3bd125bd210586fb4adf539493240d28de9bcb2bab81e35a4eb60f382b3cfe63
 
 build:
   noarch: python
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.6
 
   run:
     - anaconda-client
     - conda-pack
     - jinja2
-    - python >=2.7
+    - python >=3.6
     - requests
     - ruamel_yaml
     - tornado >=4.2
