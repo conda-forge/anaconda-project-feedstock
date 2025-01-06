@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - anaconda-project = anaconda_project.cli:main
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
 
   run:
     - anaconda-client
     - conda-pack
     - jinja2
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - ruamel_yaml
     - tornado >=4.2
@@ -33,6 +33,8 @@ requirements:
 test:
   # requires:
   #  - pip
+  requires:
+    - python {{ python_min }}
   imports:
     - anaconda_project
   commands:
