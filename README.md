@@ -156,5 +156,6 @@ Feedstock Maintainers
 * [@bollwyvl](https://github.com/bollwyvl/)
 * [@fpliger](https://github.com/fpliger/)
 * [@goanpeca](https://github.com/goanpeca/)
+* [@mcg1969](https://github.com/mcg1969/)
 * [@mingwandroid](https://github.com/mingwandroid/)
 
