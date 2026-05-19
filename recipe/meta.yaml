@@ -17,18 +17,19 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
     - setuptools
-    - python {{ python_min }}
 
   run:
     - anaconda-client
     - conda-pack
-    - jinja2
+    - entrypoints
     - python >={{ python_min }}
     - requests
     - ruamel.yaml >=0.15
     - tornado >=4.2
+    - jinja2
     - tqdm
 
 test:
